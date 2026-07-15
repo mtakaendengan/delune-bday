@@ -1,0 +1,11 @@
+{
+  "name": "Undangan Ulang Tahun Kania",
+  "short_name": "Kania 2026",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f3ff",
+  "theme_color": "#8b5cf6",
+  "icons": [
+    {"src": "./assets/images/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#8b5cf6">
+  <meta name="description" content="Undangan ulang tahun Kania De Lune Takaendengan, Minggu 19 Juli 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Undangan Ulang Tahun Kania">
+  <meta property="og:description" content="Mari merayakan hari istimewa Kania bersama.">
+  <meta property="og:image" content="./assets/images/hero.svg">
+  <title>Undangan Ulang Tahun Kania</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Geist+Pixel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" href="./assets/images/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke isi undangan</a>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <div id="global-status" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <section id="cover" class="cover" aria-labelledby="cover-title">
+    <img class="cover-bg" data-hero-image data-fallback="./assets/images/hero.svg" src="./assets/images/hero.svg" alt="">
+    <div class="cover-overlay"></div>
+    <div class="cover-card">
+      <p class="eyebrow">Undangan Ulang Tahun</p>
+      <h1 id="cover-title" class="script-title" data-celebrant-name>Kania De Lune Takaendengan</h1>
+      <p class="cover-date" data-date-label>Minggu, 19 Juli 2026</p>
+      <div class="guest-box">
+        <span>Kepada Yth.</span>
+        <strong data-guest-name>Tamu Undangan</strong>
+      </div>
+      <button id="open-invitation" class="button button-primary" type="button">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 8.5 12 14l9-5.5V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8.5Zm0-2.3V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v.2L12 12 3 6.2Z"/></svg>
+        Buka undangan
+      </button>
+    </div>
+  </section>
+
+  <div class="app-shell">
+    <aside class="desktop-panel" aria-hidden="true">
+      <img data-hero-image data-fallback="./assets/images/hero.svg" src="./assets/images/hero.svg" alt="">
+      <div class="desktop-panel-overlay"></div>
+      <div class="desktop-panel-content">
+        <p class="eyebrow">Save the date</p>
+        <h2 class="script-title" data-nickname>Kania</h2>
+        <p data-date-label>Minggu, 19 Juli 2026</p>
+      </div>
+    </aside>
+
+    <main id="main-content" class="invitation" inert>
+      <section id="home" class="hero section" tabindex="-1">
+        <img class="hero-bg" data-hero-image data-fallback="./assets/images/hero.svg" src="./assets/images/hero.svg" alt="">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">You are invited to</p>
+          <h2 class="hero-heading">Birthday Celebration</h2>
+          <div class="portrait-frame">
+            <img data-portrait-image data-fallback="./assets/images/portrait.svg" src="./assets/images/portrait.svg" alt="Potret yang berulang tahun">
+          </div>
+          <p class="age-label" data-age-wrap hidden><span>Celebrating</span><strong data-age>0</strong><span>years</span></p>
+          <h1 class="script-title" data-celebrant-name>Kania De Lune Takaendengan</h1>
+          <p class="hero-date"><span data-date-label>Minggu, 19 Juli 2026</span><br><span data-time-label>15.00 - 18.00 WITA</span></p>
+          <div class="hero-actions">
+            <a id="calendar-link" class="button button-light" href="#" target="_blank" rel="noopener noreferrer">Tambah ke kalender</a>
+            <button id="share-button" class="button button-ghost" type="button">Bagikan</button>
+          </div>
+          <a class="scroll-cue" href="#about" aria-label="Gulir ke bagian berikutnya"><span></span></a>
+        </div>
+      </section>
+
+      <section id="about" class="section section-paper text-center">
+        <div class="section-inner narrow">
+          <p class="eyebrow">A special day</p>
+          <h2 class="section-title" data-story-title>A little celebration</h2>
+          <p class="lead" data-greeting>Dengan penuh sukacita, saya mengundang Anda untuk hadir dan merayakan hari istimewa ini bersama.</p>
+          <div class="message-card">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <p data-story-text>Kehadiran dan doa baik Anda adalah hadiah yang sangat berarti.</p>
+            <strong data-host-name>Keluarga Besar</strong>
+          </div>
+        </div>
+      </section>
+
+      <div class="wave wave-purple" aria-hidden="true">
+        <svg viewBox="0 0 1440 170" preserveAspectRatio="none"><path d="M0,90 C250,180 450,20 720,90 C980,160 1180,30 1440,90 L1440,170 L0,170 Z"/></svg>
+      </div>
+
+      <section id="event" class="section section-gradient text-center">
+        <div class="section-inner">
+          <p class="eyebrow eyebrow-light">Save the date</p>
+          <h2 class="section-title light">Menuju hari istimewa</h2>
+          <div class="countdown" aria-label="Hitung mundur acara">
+            <div><strong data-countdown="days">00</strong><span>Hari</span></div>
+            <div><strong data-countdown="hours">00</strong><span>Jam</span></div>
+            <div><strong data-countdown="minutes">00</strong><span>Menit</span></div>
+            <div><strong data-countdown="seconds">00</strong><span>Detik</span></div>
+          </div>
+          <p id="countdown-ended" class="countdown-ended" hidden>Acara telah dimulai. Selamat datang!</p>
+
+          <article class="event-card">
+            <div class="event-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2V2Zm12 8H5v10h14V10ZM5 8h14V6h-2v1h-2V6H9v1H7V6H5v2Z"/></svg>
+            </div>
+            <h3 data-venue>Rumah Poli</h3>
+            <p><strong data-date-label>Minggu, 19 Juli 2026</strong></p>
+            <p data-time-label>15.00 - 18.00 WITA</p>
+            <p data-address>Politeknik Indah Blok E-1</p>
+            <p class="dress-code">Dress code: <strong data-dress-code>Smart casual</strong></p>
+            <a class="button button-primary" data-map-link href="https://www.google.com/maps/place/Rumah+Poli/@1.5078659,124.8897013,817m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3287a1dafefa0abb:0xc75a216aa754d8f6!8m2!3d1.5078605!4d124.8922762!16s%2Fg%2F11sf423ls3?entry=ttu&amp;g_ep=EgoyMDI2MDcxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Buka Google Maps</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section section-paper text-center">
+        <div class="section-inner">
+          <p class="eyebrow">Captured moments</p>
+          <h2 class="section-title">Galeri Cerita</h2>
+          <div id="gallery-grid" class="gallery-grid">
+            <button class="gallery-item gallery-tall" type="button" data-full="./assets/images/gallery-1.svg" aria-label="Buka foto galeri 1"><img src="./assets/images/gallery-1.svg" alt="Contoh foto galeri pertama" loading="lazy"></button>
+            <button class="gallery-item" type="button" data-full="./assets/images/gallery-2.svg" aria-label="Buka foto galeri 2"><img src="./assets/images/gallery-2.svg" alt="Contoh foto galeri kedua" loading="lazy"></button>
+            <button class="gallery-item" type="button" data-full="./assets/images/gallery-3.svg" aria-label="Buka foto galeri 3"><img src="./assets/images/gallery-3.svg" alt="Contoh foto galeri ketiga" loading="lazy"></button>
+            <button class="gallery-item gallery-wide" type="button" data-full="./assets/images/gallery-4.svg" aria-label="Buka foto galeri 4"><img src="./assets/images/gallery-4.svg" alt="Contoh foto galeri keempat" loading="lazy"></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="rsvp" class="section section-soft">
+        <div class="section-inner">
+          <div class="text-center">
+            <p class="eyebrow">Reservation</p>
+            <h2 class="section-title">Konfirmasi Kehadiran</h2>
+            <p class="section-description">Mohon isi RSVP agar persiapan acara dapat dilakukan dengan baik.</p>
+          </div>
+          <form id="rsvp-form" class="form-card">
+            <label>Nama lengkap<input name="name" type="text" maxlength="80" required autocomplete="name"></label>
+            <label>Konfirmasi kehadiran
+              <select name="attendance" required>
+                <option value="">Pilih jawaban</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak hadir</option>
+                <option value="Masih Ragu">Masih ragu</option>
+              </select>
+            </label>
+            <label>Jumlah tamu<input name="guestCount" type="number" min="0" max="10" value="1" required></label>
+            <label>Catatan<textarea name="notes" rows="3" maxlength="300" placeholder="Opsional"></textarea></label>
+            <button class="button button-primary full" type="submit">Simpan RSVP</button>
+            <p id="rsvp-status" class="form-status" role="status" aria-live="polite" hidden></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="wishes" class="section section-paper">
+        <div class="section-inner">
+          <div class="text-center">
+            <p class="eyebrow">Warm wishes</p>
+            <h2 class="section-title">Ucapan &amp; Doa</h2>
+          </div>
+          <form id="wish-form" class="form-card">
+            <label>Nama<input name="name" type="text" maxlength="80" required autocomplete="name"></label>
+            <label>Ucapan<textarea name="message" rows="4" maxlength="500" required placeholder="Tuliskan ucapan dan doa terbaik..."></textarea></label>
+            <label>Kehadiran
+              <select name="attendance">
+                <option value="">Tidak disebutkan</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak hadir</option>
+                <option value="Masih Ragu">Masih ragu</option>
+              </select>
+            </label>
+            <button class="button button-primary full" type="submit">Kirim ucapan</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+          </form>
+
+          <div class="wish-list-wrap">
+            <div id="wish-list" class="wish-list"></div>
+            <p id="wish-empty" class="empty-state">Belum ada ucapan. Jadilah yang pertama.</p>
+            <button id="load-more-wishes" class="button button-outline full" type="button" hidden>Muat ucapan lainnya</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="upload-section" class="section section-soft">
+        <div class="section-inner">
+          <div class="text-center">
+            <p class="eyebrow">Share a moment</p>
+            <h2 class="section-title">Titip Foto</h2>
+            <p class="section-description">Kirim foto kebersamaan untuk disimpan di Google Drive. Foto baru tampil setelah disetujui.</p>
+          </div>
+          <form id="upload-form" class="form-card">
+            <label>Nama pengirim<input name="name" type="text" maxlength="80" required></label>
+            <label>Caption<input name="caption" type="text" maxlength="160" placeholder="Opsional"></label>
+            <label>Foto<input name="photo" type="file" accept="image/jpeg,image/png,image/webp" required><small>Maksimal 3 MB. JPG, PNG, atau WebP.</small></label>
+            <button class="button button-primary full" type="submit">Unggah foto</button>
+            <p id="upload-status" class="form-status" role="status" aria-live="polite" hidden></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="gift-section" class="section section-gradient text-center" hidden>
+        <div class="section-inner">
+          <p class="eyebrow eyebrow-light">Optional</p>
+          <h2 class="section-title light" data-gift-title>Birthday Gift</h2>
+          <p class="section-description light" data-gift-description>Doa dan kehadiran Anda sudah lebih dari cukup.</p>
+          <div class="gift-card">
+            <p data-gift-bank>Nama Bank</p>
+            <strong data-gift-account-number>0000000000</strong>
+            <span data-gift-account-name>Nama Pemilik Rekening</span>
+            <button id="copy-account" class="button button-light" type="button">Salin nomor rekening</button>
+          </div>
+        </div>
+      </section>
+
+      <footer id="closing" class="closing section text-center">
+        <img class="closing-image" data-portrait-image data-fallback="./assets/images/portrait.svg" src="./assets/images/portrait.svg" alt="Potret yang berulang tahun">
+        <p class="eyebrow">Thank you</p>
+        <h2 class="script-title" data-closing-message>Sampai bertemu di hari bahagia!</h2>
+        <p>Kehadiran Anda akan membuat perayaan ini semakin berkesan.</p>
+        <strong data-celebrant-name>Kania De Lune Takaendengan</strong>
+        <small>Dibuat dengan hangat untuk momen istimewa.</small>
+      </footer>
+    </main>
+  </div>
+
+  <nav class="bottom-nav" aria-label="Navigasi undangan">
+    <a class="active" href="#home" aria-label="Beranda"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 9 8h-3v9h-5v-6h-2v6H6v-9H3l9-8Z"/></svg><span>Home</span></a>
+    <a href="#event" aria-label="Acara"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h2a2 2 0 0 1 2 2v14H3V6a2 2 0 0 1 2-2h2V2Zm12 8H5v8h14v-8Z"/></svg><span>Acara</span></a>
+    <a href="#gallery" aria-label="Galeri"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v14H2V5a2 2 0 0 1 2-2Zm0 2v10l4-4 3 3 2-2 5 5h2V5H4Zm11 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z"/></svg><span>Galeri</span></a>
+    <a href="#rsvp" aria-label="RSVP"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17 3a4 4 0 1 1-3.5 6A7 7 0 0 1 20 16v3h-2v-3a5 5 0 0 0-5-5h-2a5 5 0 0 0-5 5v3H4v-3a7 7 0 0 1 6.5-7A4 4 0 1 1 17 3Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM7 5a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></svg><span>RSVP</span></a>
+    <a href="#wishes" aria-label="Ucapan"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 3H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4l4 3 4-3h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm0 14h-4.7L12 19.5 8.7 17H4V5h16v12Z"/></svg><span>Ucapan</span></a>
+  </nav>
+
+  <button id="music-toggle" class="floating-button music-button" type="button" aria-label="Putar atau jeda musik" aria-pressed="false" hidden>
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 3v12.2a4 4 0 1 1-2-3.46V7l-8 2v8.2a4 4 0 1 1-2-3.46V7.44L19 4.5V3ZM5 18a2 2 0 1 0 4 0 2 2 0 0 0-4 0Zm10-2a2 2 0 1 0 4 0 2 2 0 0 0-4 0Z"/></svg>
+  </button>
+  <audio id="background-music" loop preload="metadata"></audio>
+
+  <dialog id="image-dialog" class="image-dialog">
+    <button id="dialog-close" type="button" aria-label="Tutup foto">×</button>
+    <img id="dialog-image" src="./assets/images/placeholder.svg" alt="Foto galeri">
+  </dialog>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
