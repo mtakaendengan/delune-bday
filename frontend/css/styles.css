@@ -123,12 +123,45 @@ svg { width: 1.2em; fill: currentColor; }
 .event-icon svg { width: 28px; }
 .dress-code { margin-bottom: 1.3rem !important; }
 
-.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-rows: 155px; gap: .7rem; margin-top: 2rem; }
-.gallery-item { padding: 0; border: 0; border-radius: 18px; overflow: hidden; cursor: pointer; background: #eee; box-shadow: 0 8px 22px rgba(34,22,45,.1); }
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
-.gallery-item:hover img { transform: scale(1.055); }
-.gallery-tall { grid-row: span 2; }
-.gallery-wide { grid-column: span 2; }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  position: relative;
+  width: 100%;
+  min-height: clamp(480px, 72svh, 720px);
+  padding: 0;
+  border: 0;
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #eee;
+  box-shadow: 0 14px 35px rgba(34, 22, 45, 0.16);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.025);
+}
+
+/* Menonaktifkan bentuk kolase lama */
+.gallery-tall,
+.gallery-wide {
+  grid-row: auto;
+  grid-column: auto;
+}
 
 .form-card { margin-top: 1.7rem; padding: 1.35rem; border: 1px solid var(--line); border-radius: var(--radius); background: white; box-shadow: var(--shadow); }
 .form-card label { display: grid; gap: .45rem; margin-bottom: 1rem; font-weight: 700; font-size: .86rem; }
