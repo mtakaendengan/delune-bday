@@ -1,14 +1,14 @@
 :root {
-  --primary: #8b5cf6;
-  --primary-dark: #6d28d9;
-  --secondary: #ec4899;
-  --accent: #f59e0b;
-  --ink: #241c31;
-  --muted: #6f667b;
-  --paper: #fffdfb;
-  --soft: #f7f2ff;
-  --line: rgba(71, 43, 92, 0.14);
-  --shadow: 0 18px 45px rgba(57, 37, 72, 0.14);
+  --primary: #A72C70;
+  --primary-dark: #7A1F55;
+  --secondary: #C83B82;
+  --accent: #F05FA5;
+  --ink: #3B1830;
+  --muted: #76586B;
+  --paper: #FFF8FC;
+  --soft: #FCEAF3;
+  --line: rgba(122, 31, 85, 0.16);
+  --shadow: 0 18px 45px rgba(122, 31, 85, 0.14);
   --radius: 28px;
   --content-width: 560px;
   --nav-height: 76px;
@@ -19,7 +19,7 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; min-height: 100%; }
-body { background: #16111d; color: var(--ink); }
+body { background: #2B1223; color: var(--ink); }
 body, button, input, textarea, select { font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
 a { color: inherit; }
@@ -41,11 +41,20 @@ svg { width: 1.2em; fill: currentColor; }
   transition: opacity .8s ease, visibility .8s ease;
 }
 .cover-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.cover-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,10,30,.28), rgba(20,10,30,.76)); backdrop-filter: blur(2px); }
+.cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(122, 31, 85, 0.18),
+    rgba(59, 24, 48, 0.72)
+  );
+  backdrop-filter: blur(2px);
+}
 .cover-card {
   position: relative; width: min(100%, 420px); padding: 2.25rem 1.5rem;
   text-align: center; color: white; border: 1px solid rgba(255,255,255,.34);
-  border-radius: 34px; background: rgba(30,18,42,.42); box-shadow: 0 24px 80px rgba(0,0,0,.3);
+  border-radius: 34px; background: rgba(59, 24, 48, 0.42); box-shadow: 0 24px 80px rgba(0,0,0,.3);
   backdrop-filter: blur(14px);
 }
 .invitation-open .cover { opacity: 0; visibility: hidden; pointer-events: none; }
@@ -232,7 +241,15 @@ svg { width: 1.2em; fill: currentColor; }
   .app-shell { display: grid; grid-template-columns: minmax(0, 1fr) var(--content-width); }
   .desktop-panel { position: sticky; top: 0; display: block; height: 100vh; overflow: hidden; }
   .desktop-panel > img { width: 100%; height: 100%; object-fit: cover; }
-  .desktop-panel-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(25,10,35,.35), rgba(25,10,35,.8)); }
+  .desktop-panel-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(122, 31, 85, 0.20),
+    rgba(59, 24, 48, 0.74)
+  );
+}
   .desktop-panel-content { position: absolute; inset: 0; display: grid; place-content: center; padding: 3rem; text-align: center; color: white; }
   .desktop-panel-content .eyebrow { color: rgba(255,255,255,.8); }
   .desktop-panel-content .script-title { font-size: clamp(4rem, 8vw, 7rem); }
@@ -246,6 +263,52 @@ svg { width: 1.2em; fill: currentColor; }
   .countdown { gap: .35rem; }
   .countdown div { padding-inline: .15rem; }
   .bottom-nav span { font-size: .58rem; }
+}
+
+/* ==================================================
+   Penyesuaian warna Hero Kania
+   ================================================== */
+
+.hero {
+  color: var(--ink);
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 248, 252, 0.08) 0%,
+    rgba(255, 248, 252, 0.42) 48%,
+    rgba(255, 248, 252, 0.82) 100%
+  );
+}
+
+.hero .eyebrow {
+  color: var(--primary-dark);
+}
+
+.hero .age-label {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(122, 31, 85, 0.14);
+  backdrop-filter: blur(8px);
+}
+
+.hero .button-ghost {
+  color: var(--ink);
+  border-color: rgba(59, 24, 48, 0.30);
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.hero .button-ghost:hover {
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.hero .scroll-cue {
+  border-color: rgba(59, 24, 48, 0.46);
+}
+
+.hero .scroll-cue span {
+  background: var(--ink);
 }
 
 @media (prefers-reduced-motion: reduce) {
